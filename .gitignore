@@ -1,0 +1,9 @@
+# Unfinished Files
+activities.go
+services/activities/types.go
+tasks.go
+services/tasks/types.go
+client.go
+README.md
+# Env Files
+.env
