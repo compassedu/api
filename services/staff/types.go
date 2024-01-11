@@ -1,6 +1,6 @@
 package staff
 
-import "api.compass.education/services/types"
+import "github.com/compassedu/api/services/types"
 
 type StaffRequest struct {
 	Limit float64 `json:"limit"`

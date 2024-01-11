@@ -9,8 +9,8 @@ import (
 	"net/http/cookiejar"
 	"strings"
 
-	"api.compass.education/services/login"
-	"api.compass.education/services/types"
+	"github.com/compassedu/api/services/login"
+	"github.com/compassedu/api/services/types"
 )
 
 // Login authenticates a user with Compass Education API and returns session cookies and user ID.

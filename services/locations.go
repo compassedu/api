@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"net/http/cookiejar"
 
-	"api.compass.education/services/locations"
-	"api.compass.education/services/types"
+	"github.com/compassedu/api/services/locations"
+	"github.com/compassedu/api/services/types"
 )
 
 func getAllLocations(cookies string, schoolId string) ([]types.LC, error) {

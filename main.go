@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"api.compass.education/services"
+	"github.com/compassedu/api/services"
 )
 
 func main() {

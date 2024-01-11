@@ -8,8 +8,8 @@ import (
 	"net/http/cookiejar"
 	"time"
 
-	"api.compass.education/services/calendar"
-	"api.compass.education/services/types"
+	"github.com/compassedu/api/services/calendar"
+	"github.com/compassedu/api/services/types"
 )
 
 func getCalendarEventsByUser(cookies string, schoolId string, userId float64, startDate time.Time, endDate time.Time) ([]types.CalendarTransport, error) {

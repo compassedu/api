@@ -1,6 +1,6 @@
 package locations
 
-import "api.compass.education/services/types"
+import "github.com/compassedu/api/services/types"
 
 type LocationsResult struct {
 	D []types.LC `json:"d"`

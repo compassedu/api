@@ -1,6 +1,6 @@
 package calendar
 
-import "api.compass.education/services/types"
+import "github.com/compassedu/api/services/types"
 
 type CalendarRequest struct {
 	UserId    float64 `json:"userId"`

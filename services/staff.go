@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"net/http/cookiejar"
 
-	"api.compass.education/services/staff"
-	"api.compass.education/services/types"
+	"github.com/compassedu/api/services/staff"
+	"github.com/compassedu/api/services/types"
 )
 
 func getAllStaff(cookies string, schoolId string, userId float64) ([]types.User, error) {

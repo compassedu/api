@@ -1,3 +1,3 @@
-module api.compass.education
+module github.com/compassedu/api
 
 go 1.21.5
