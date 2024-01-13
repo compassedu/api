@@ -34,4 +34,4 @@ jobs:
         COMPASS_SCHOOLID: ${{ secrets.COMPASS_SCHOOLID }}
         COMPASS_USERNAME: ${{ secrets.COMPASS_USERNAME }}
         COMPASS_PASSWORD: ${{ secrets.COMPASS_PASSWORD }}
-      run: go test -v ./...
+      run: go test
