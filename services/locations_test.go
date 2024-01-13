@@ -1,17 +1,21 @@
 package services_test
 
 import (
+	"os"
 	"testing"
 
 	"github.com/compassedu/api/services"
 )
 
 func TestGetAllLocations(t *testing.T) {
-	c, _, err := services.Login("", "", "")
+	p := os.Getenv("COMPASS_PASSWORD")
+	un := os.Getenv("COMPASS_USERNAME")
+	s := os.Getenv("COMPASS_SCHOOLID")
+	c, _, err := services.Login(un, p, s)
 	if err != nil {
 		t.Error(err)
 	}
-	got, err := services.GetAllLocations(c, "")
+	got, err := services.GetAllLocations(c, s)
 	if err != nil {
 		t.Error(err)
 	}

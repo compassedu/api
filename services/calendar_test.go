@@ -1,6 +1,7 @@
 package services_test
 
 import (
+	"os"
 	"testing"
 	"time"
 
@@ -8,11 +9,14 @@ import (
 )
 
 func TestGetCalendarEventsByUser(t *testing.T) {
-	c, u, err := services.Login("", "", "")
+	p := os.Getenv("COMPASS_PASSWORD")
+	un := os.Getenv("COMPASS_USERNAME")
+	s := os.Getenv("COMPASS_SCHOOLID")
+	c, u, err := services.Login(un, p, s)
 	if err != nil {
 		t.Error(err)
 	}
-	got, err := services.GetCalendarEventsByUser(c, "", u, time.Now(), time.Now())
+	got, err := services.GetCalendarEventsByUser(c, s, u, time.Now(), time.Now())
 	if err != nil {
 		t.Error(err)
 	}
