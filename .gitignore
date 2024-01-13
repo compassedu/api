@@ -4,7 +4,6 @@ services/activities/types.go
 tasks.go
 services/tasks/types.go
 client.go
-README.md
 events.go
 events
 classes
