@@ -113,3 +113,164 @@ type LC struct {
 	Name     string  `json:"n"`
 	RoomName string  `json:"roomName"`
 }
+type AlertItem struct {
+	AlertItemId    float64 `json:"AlertItemId"`
+	Body           string  `json:"Body"`
+	Content        string  `json:"Content"`
+	Dismissible    bool    `json:"Dismissible"`
+	ImageSourceUrl string  `json:"ImageSourceUrl"`
+	IsWarning      bool    `json:"IsWarning"`
+	LinkText       string  `json:"LinkText"`
+	LinkUrl        string  `json:"LinkUrl"`
+	Title          string  `json:"Title"`
+	Type           float64 `json:"Type"`
+}
+type StandardClass struct {
+	AttendanceModeDefault   float64  `json:"attendanceModeDefault"`
+	CampusId                *float64 `json:"campusId"`
+	CheckInEnabledDefault   float64  `json:"checkInEnabledDefault"`
+	CustomLocation          *string  `json:"customLocation"`
+	Description             *string  `json:"description"`
+	ExtendedStatusId        float64  `json:"extendedStatusId"`
+	ExternalIntegrationCode string   `json:"externalIntegrationCode"`
+	FacultyName             string   `json:"facultyName"`
+	Finish                  string   `json:"finish"`
+	HaparaSyncEnabled       bool     `json:"haparaSyncEnabled"`
+	Id                      float64  `json:"id"`
+	ImportIdentifier        string   `json:"importIdentifier"`
+	ImportTeachers          bool     `json:"importTeachers"`
+	LayerAllowsImport       bool     `json:"layerAllowsImport"`
+	LayerId                 float64  `json:"layerId"`
+	LocationId              *float64 `json:"locationId"`
+	ManagerId               float64  `json:"managerId"`
+	ManagerImportIdentifier string   `json:"managerImportIdentifier"`
+	Name                    string   `json:"name"`
+	RollTapThreshold        float64  `json:"rollTapThreshold"`
+	Start                   string   `json:"start"`
+	SubjectId               float64  `json:"subjectId"`
+	SubjectImportIdentifier string   `json:"subjectImportIdentifier"`
+	SubjectLongName         string   `json:"subjectLongName"`
+	TimetableStructureId    float64  `json:"timetableStructureId"`
+	YearLevelShortName      string   `json:"yearLevelShortName"`
+}
+
+// type ActionCentreEvent struct {
+// 	additionalContactDetails
+// ""
+// additionalDetails
+// ""
+// administrationDetails
+// ""
+// allowConsentWithoutPayment
+// false
+// allowDecline
+// false
+// amountPaid
+// 0
+// attendeeLimit
+// null
+// attendeeStatus
+// 1
+// canProvideEventConsent
+// true
+// confirmedAttendeesCount
+// 51
+// consentDt
+// "2024-01-10T23 15 51Z"
+// consentFormId
+// 2
+// consentName
+// "DARAGH O'GORMAN"
+// consentPaymentDue
+// "2024-02-01T23 59 59Z"
+// consentReturnLocation
+// "na"
+// cost
+// 0
+// description
+// null
+// dressCode
+// ""
+// educativePurpose
+// "Detailed itinerary will be provided closer to the trip."
+// eligibleForCSEF
+// false
+// expenses
+// null
+// faculty
+// ""
+// fimsUnallocatedFunds
+// 0
+// finish
+// "2024-02-13T07 55 00Z"
+// id
+// 5912
+// isOptIn
+// false
+// isParentAttendee
+// false
+// isPartiallyPaid
+// false
+// location
+// null
+// medicalDetails
+// {__type  "ActionCentreEventContactDetails http //jdlf.com.au/ns/data/actioncentre/web",…}
+// additionalMedicalDetails
+// ""
+// __type
+// "ActionCentreEventContactDetails http //jdlf.com.au/ns/data/actioncentre/web"
+// name
+// "Ski Trip"
+// onlineProcessing
+// true
+// paidConsentMethod
+// 1
+// paidViaCsef
+// false
+// paidViaPaymentPlan
+// false
+// parentAttendeeId
+// 0
+// parentAttendeeName
+// null
+// paymentDt
+// null
+// paymentPlanInstalments
+// null
+// questions
+// []
+// refundCutoffDt
+// null
+// refundStatus
+// null
+// requiresConsent
+// true
+// requiresPayment
+// false
+// sessions
+// [{__type  "ActionCentreEventSession http //jdlf.com.au/ns/data/actioncentre/web", campusName  "",…}]
+// showActionPlans
+// false
+// start
+// "2024-02-08T03 30 00Z"
+// studentConsentContent
+// "I give permission for Killian O'Gorman to attend this event. Where the staff member in charge is unable to contact me, or where it is impracticable to contact me, I authorise the staff member in charge to 1) consent to any medical or surgical attention deemed necessary by a medical practitioner, and 2) administer such first-aid as the staff member in charge judges to be reasonably necessary. I understand that this is an official school event and that Killian O'Gorman will adhere to the dress code and behave in alignment with the school&#39;s code of behaviour and the house rules.&nbsp;"
+// studentContactInfo
+// []
+// studentEmergencyContacts
+// []
+// studentId
+// 4225
+// studentMedicalInfo
+// []
+// studentName
+// "O'Gorman, Killian"
+// transport
+// ""
+// useCsef
+// false
+// usePaymentPlans
+// false
+// __type
+// "ActionCentreEvent http //jdlf.com.au/ns/data/actioncentre/web"
+// }

@@ -5,5 +5,12 @@ tasks.go
 services/tasks/types.go
 client.go
 README.md
+events.go
+events
+classes
+classes.go
+tasks
 # Env Files
 .env
+# VSCODE Config
+.vscode
