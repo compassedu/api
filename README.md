@@ -9,12 +9,15 @@ A Go library for interacting with Compass's API. This library allows you to:
 - Get Classes
 - Get Locations
 
-> [!NOTE] More Functions coming soon.
+> [!NOTE]
+> More Functions coming soon.
 
 ## Installation
 You need a working Go environment. We officially support only currently supported Go versions according to Go project's release policy.
 
-```go get github.com/compassedu/api```
+```
+go get github.com/compassedu/api
+```
 Getting Started
 package main
 
