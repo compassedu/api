@@ -153,6 +153,41 @@ type StandardClass struct {
 	TimetableStructureId    float64  `json:"timetableStructureId"`
 	YearLevelShortName      string   `json:"yearLevelShortName"`
 }
+type NewsItem struct {
+	CommunicationType      float64              `json:"CommunicationType"`
+	Content1               string               `json:"Content1"`
+	Content2               *string              `json:"Content2"`
+	CreatedByAdmin         bool                 `json:"CreatedByAdmin"`
+	EmailSentDate          string               `json:"EmailSentDate"`
+	Finish                 string               `json:"Finish"`
+	Locked                 bool                 `json:"Locked"`
+	NewsItemId             string               `json:"NewsItemId"`
+	NotificationStatus     float64              `json:"NotificationStatus"`
+	PostDateTime           string               `json:"PostDateTime"`
+	Priority               bool                 `json:"Priority"`
+	PublicWebsite          bool                 `json:"PublicWebsite"`
+	PublishToLinkedSchools bool                 `json:"PublishToLinkedSchools"`
+	PublishToTalkingPoints bool                 `json:"PublishToTalkingPoints"`
+	SenderId               float64              `json:"SenderId"`
+	ShowImagesFullScreen   bool                 `json:"ShowImagesFullScreen"`
+	Start                  string               `json:"Start"`
+	StartFinishString      string               `json:"StartFinishString"`
+	Title                  string               `json:"Title"`
+	UserId                 float64              `json:"UserId"`
+	UserImageUrl           string               `json:"UserImageUrl"`
+	UserName               string               `json:"UserName"`
+	Attachments            []NewsitemAttachment `json:"Attachments"`
+}
+type NewsitemAttachment struct {
+	AssetId              float64  `json:"AssetId"`
+	FileAssetType        float64  `json:"FileAssetType"`
+	IsImage              bool     `json:"IsImage"`
+	Name                 string   `json:"Name"`
+	OriginalFileName     string   `json:"OriginalFileName"`
+	SourceOrganisationId *float64 `json:"SourceOrganisationId"`
+	UiLink               string   `json:"UiLink"`
+	Url                  *string  `json:"Url"`
+}
 
 // type ActionCentreEvent struct {
 // 	additionalContactDetails
