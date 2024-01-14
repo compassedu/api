@@ -3,7 +3,6 @@ activities.go
 services/activities/types.go
 tasks.go
 services/tasks/types.go
-client.go
 events.go
 events
 classes
