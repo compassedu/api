@@ -3,11 +3,14 @@ activities.go
 services/activities/types.go
 tasks.go
 services/tasks/types.go
-events.go
-events
 classes
 classes.go
 tasks
+packages/
+bazel-api
+bazel-bin
+bazel-testlogs
+bazel-out
 # Env Files
 .env
 # VSCODE Config

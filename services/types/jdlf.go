@@ -189,6 +189,57 @@ type NewsitemAttachment struct {
 	Url                  *string  `json:"Url"`
 }
 
+type ActionCentreEvent struct {
+	AdditionalContactDetails   string                     `json:"additionalContactDetails"`
+	AdditionalDetails          string                     `json:"additionalDetails"`
+	AllowConsentWithoutPayment bool                       `json:"allowConsentWithoutPayment"`
+	AllowDecline               bool                       `json:"allowDecline"`
+	AmountPaid                 float64                    `json:"amountPaid"`
+	AttendeeLimit              *float64                   `json:"attendeeLimit"`
+	AttendeeStatus             float64                    `json:"attendeeStatus"`
+	CanProvideEventConsent     bool                       `json:"canProvideEventConsent"`
+	ConfirmedAttendeesCount    float64                    `json:"confirmedAttendeesCount"`
+	ConsentDt                  string                     `json:"consentDt"`
+	ConsentFormId              float64                    `json:"consentFormId"`
+	ConsentName                string                     `json:"consentName"`
+	ConsentPaymentDue          string                     `json:"consentPaymentDue"`
+	ConsentReturnLocation      string                     `json:"consentReturnLocation"`
+	Cost                       float64                    `json:"cost"`
+	Description                *string                    `json:"description"`
+	DressCode                  string                     `json:"dressCode"`
+	EducativePurpose           string                     `json:"educativePurpose"`
+	EligibleForCSEF            bool                       `json:"eligibleForCSEF"`
+	Finish                     string                     `json:"finish"`
+	Id                         float64                    `json:"id"`
+	IsOptIn                    bool                       `json:"isOptIn"`
+	IsParentAttendee           bool                       `json:"isParentAttendee"`
+	IsPartiallyPaid            bool                       `json:"isPartiallyPaid"`
+	Location                   *string                    `json:"location"`
+	Name                       string                     `json:"name"`
+	OnlineProcessing           bool                       `json:"onlineProcessing"`
+	PaidConsentMethod          float64                    `json:"paidConsentMethod"`
+	PaidViaCsef                bool                       `json:"paidViaCsef"`
+	PaidViaPaymentPlan         bool                       `json:"paidViaPaymentPlan"`
+	ParentAttendeeId           float64                    `json:"parentAttendeeId"`
+	ParentAttendeeName         *string                    `json:"parentAttendeeName"`
+	RequiresConsent            bool                       `json:"requiresConsent"`
+	RequiresPayment            bool                       `json:"requiresPayment"`
+	Sessions                   []ActionCentreEventSession `json:"sessions"`
+	ShowActionPlans            bool                       `json:"showActionPlans"`
+	Start                      string                     `json:"start"`
+	StudentConsentContent      string                     `json:"studentConsentContent"`
+	StudentId                  float64                    `json:"studentId"`
+	StudentName                string                     `json:"studentName"`
+	Transport                  string                     `json:"transport"`
+}
+type ActionCentreEventSession struct {
+	CampusName       *string `json:"campusName"`
+	Finish           string  `json:"finish"`
+	InstanceId       string  `json:"instanceId"`
+	Location         *string `json:"location"`
+	LocationComments string  `json:"locationComments"`
+}
+
 // type ActionCentreEvent struct {
 // 	additionalContactDetails
 // ""
