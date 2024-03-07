@@ -188,6 +188,38 @@ type NewsitemAttachment struct {
 	UiLink               string   `json:"UiLink"`
 	Url                  *string  `json:"Url"`
 }
+type SL struct {
+	Uktna                  float64 `json:"Uktna"`
+	Aea                    float64 `json:"aea"`
+	Aid                    float64 `json:"aid"`
+	An                     string  `json:"an"`
+	Authorizedabsence      float64 `json:"authorizedabsence"`
+	C                      float64 `json:"c"`
+	Counted                float64 `json:"counted"`
+	Fg                     string  `json:"fg"`
+	Im                     float64 `json:"im"`
+	L                      float64 `json:"l"`
+	La                     float64 `json:"la"`
+	Ln                     string  `json:"ln"`
+	Lu                     float64 `json:"lu"`
+	NotPresentCountedVceOk float64 `json:"notPresentCountedVceOk"`
+	Notcounted             float64 `json:"notcounted"`
+	Npa                    float64 `json:"npa"`
+	Npu                    float64 `json:"npu"`
+	P                      float64 `json:"p"`
+	Pa                     string  `json:"pa"`
+	Po                     float64 `json:"po"`
+	Pok                    string  `json:"pok"`
+	SubjectName            string  `json:"sn"`
+	Spc                    string  `json:"spc"`
+	Ta                     float64 `json:"ta"`
+	Tna                    float64 `json:"tna"`
+	Uid                    float64 `json:"uid"`
+	Un                     string  `json:"un"`
+	Unauthorizedabsence    float64 `json:"unauthorizedabsence"`
+	Vceok                  float64 `json:"vceok"`
+	Vpc                    string  `json:"vpc"`
+}
 
 type ActionCentreEvent struct {
 	AdditionalContactDetails   string                     `json:"additionalContactDetails"`
