@@ -18,6 +18,7 @@ func getAttendanceSummary(cookies string, schoolId string, userId float64, start
 	if err != nil {
 		return []types.SL{}, err
 	}
+
 	client := &http.Client{Jar: jar}
 	requestBody := attendance.GetAttendanceSummaryRequest{
 		StartDate:            startDate.Format("2006-01-02T15:04:05.000Z"),
